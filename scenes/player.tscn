@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyjku4w27t5ju"]
+
+[ext_resource type="Texture2D" uid="uid://ddcpgr7rm081b" path="res://tilemaps/1bitKnight-updated.png" id="1_ubth1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hiwxv"]
+radius = 6.0
+
+[node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
+
+[node name="Knight" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_ubth1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_hiwxv")
