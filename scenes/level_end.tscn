@@ -58,3 +58,5 @@ sprite_frames = SubResource("SpriteFrames_eo5ln")
 autoplay = "default"
 frame = 1
 frame_progress = 0.776398
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
